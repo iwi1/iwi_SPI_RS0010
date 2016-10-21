@@ -503,7 +503,7 @@ void SPI_RS0010::drawLine(int8_t x0, int8_t y0, int8_t x1, int8_t y1, uint8_t co
 }
 
 /************ Convert Float to String    **********/
-char * floatToString(char * outstr, float value, int places, int minwidth=0, bool rightjustify=false) {
+char * SPI_RS0010::floatToString(char * outstr, float value, int places, int minwidth=0, bool rightjustify=false) {
     // this is used to write a float value to string, outstr.  oustr is also the return value.
     int digit;
     float tens = 0.1;
